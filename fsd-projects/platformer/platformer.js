@@ -39,17 +39,27 @@ $(function () {
     createPlatform(0, 370, 70, 10, "blue"); //first line platform PT2
     createPlatform(350, 300, 70, 10, "blue"); //top first line platform
     createPlatform(680, 200, 70, 10, "blue"); //top second box nub
-     createPlatform(700, 550, 700, 100, "blue"); //hallway top
+    createPlatform(700, 550, 700, 100, "blue"); //hallway top
+    createPlatform(920, 450, 50, 10, "blue"); //hallway top PT3
+    createPlatform(950, 350, 700, 200, "blue"); //hallway top PT2
+    createPlatform(780, 0, 100, 400, "blue"); //Second box platform top PT2
+    createPlatform(1000, 250, 100, 100, "blue") //Box in room
+    createPlatform(1100, 150, 230, 100, "blue") //Box in room PT2
+    createPlatform(1100, 240, 240, 10, "blue") //Box in room PT2
+    createPlatform(860, 120, 50, 230, "blue"); //second top box PT3
     // TODO 3 - Create Collectables
     createCollectable("steve", 0, 500, .05, 1);
     createCollectable("diamond", 1300, 700, .05, 1);
-    createCollectable("diamond", 700, 100, .05, 1);
+    createCollectable("grace", 730, 100, .05, 1);
+    createCollectable("database", 860, 0, .05, 1);
+    createCollectable("max", 1100, 250, .05, 1);
  
 
     
     // TODO 4 - Create Cannons
-    createCannon("left", 400, 100000, 5000, 5000);
+    createCannon("bottom", 650, 20000, 25, 8000);
     createCannon("right", 800, 14000, 5000, 240)
+    createCannon("right", 150, 10000, 3000, 50)
 
     
     
