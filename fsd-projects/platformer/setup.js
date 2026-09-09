@@ -102,5 +102,11 @@ var collectableList = {
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
   steve: { image: "images/collectables/steve-head.png" },
-  pineapple: {image: "images/collectables/pineapple-collectable.png"}
+  pineapple: {image: "images/collectables/pineapple-collectable.png"},
+  bigTower: {image: "images/collectables/big-tower-collectable.png"},
+  bigIceTower: {image: "images/collectables/big-ice-tower-collectable.png"},
+  bigNeonTower: {image: "images/collectables/big-neon-tower-collectable.png"},
+  bigFlappyTower: {image: "images/collectables/big-flappy-tower-collectable.png"},
+  bigTowerTwo: {image: "images/collectables/big-tower-two-collectable.png"},
+  backgroundImage: {image: "images/platformerbackground.png"},
 };
