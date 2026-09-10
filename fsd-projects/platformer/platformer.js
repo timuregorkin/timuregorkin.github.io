@@ -31,8 +31,8 @@ $(function () {
     
 
     // TODO 2 - Create Platforms
-    createPlatform(200, 620, 200, 120, "purple"); //First box platform
-    createPlatform(0, 500, 150, 150, "purple"); //first line platform
+    createPlatform(300, 620, 100, 120, "purple"); //First box platform
+    createPlatform(0, 500, 90, 150, "purple"); //first line platform
     createPlatform(700, 500, 80, 150, "purple"); //Second box platform bottom
     createPlatform(700, 200, 80, 200, "purple"); //Second box platform top
     createPlatform(640, 560, 80, 10, "purple"); //Second line platform
@@ -50,7 +50,7 @@ $(function () {
     // TODO 3 - Create Collectables
     createCollectable("bigIceTower", 0, 690, .05, 1);
     createCollectable("bigTower", 0, 450, .05, 1);
-    createCollectable("bigNeonTower", 1300, 700, .05, 1);
+    createCollectable("bigNeonTower", 1280, 690, .05, 1);
     createCollectable("bigFlappyTower", 730, 100, .05, 1);
     createCollectable("bigTowerTwo", 860, 0, .05, 1);
     createCollectable("pineapple", 1100, 250, .05, 1);
@@ -61,6 +61,7 @@ $(function () {
     createCannon("bottom", 650, 20000, 25, 8000);
     createCannon("right", 750, 14000, 5000, 135);
     createCannon("right", 150, 10000, 3000, 50);
+    createCannon("right", 350, 100000, 100000, 50);
     
     
     //////////////////////////////////
