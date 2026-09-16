@@ -21,6 +21,7 @@
 
       .board {
         height: 100vh;
+        background-image: url("Sanford-Idiotic-meme-5.jpg");
       }
     </style>
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -68,15 +69,20 @@
         //////////////////////////////////////////////////////////////////
         /////////////////// YOUR CODE BELOW HERE /////////////////////////
         //////////////////////////////////////////////////////////////////
-
+        function getRandomColor(){
+          var randomR = Math.floor(Math.random() * 256);
+          var randomG = Math.floor(Math.random() * 256);
+          var randomB = Math.floor(Math.random() * 256);
+          return "rgb(" + randomR + ", " + randomG + ", " + randomB + ")"
+        }
         // TODO 2 - Variable declarations
         var positionX = 0;
-        var postionY = 0;
         var speedX = 10;
         var speedY = 10;
         var points = 0;
         var positionY = 0;
-
+        var boardHeight = jQuery(window).height();
+        
 
 
 
@@ -94,6 +100,11 @@
         } else if (positionX <= 0) {
           speedX *= -1;
         }
+        if (positionY >= boardHeight) {
+          speedY *= -1;
+        } else if (positionY <= 0) {
+          speedY *= -1;
+        }
 
 
           
@@ -108,10 +119,15 @@
          */
         function handleBoxClick() {
           var randomXPos = Math.random() * boardWidth;
+          var randomYPos = Math.random() * boardHeight;
+          var colorStr = "rgb(randomR, randomG, randomB)";
+          box.css("background-color", colorStr);
           positionX = randomXPos;
+          positionY = randomYPos;
           points += 1;
           speedX = points * 3 + 10;
           changeBoxText(points);
+          speedY = points * 3 + 10;
 
 
 
